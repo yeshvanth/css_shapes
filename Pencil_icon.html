@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<head>
+		<title>
+			CSS - Shapes Diamond
+		</title>
+		<style type="text/css">
+			.pencil_icon {
+				position: relative;
+				top: 12em;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				width: 5em;
+				height: 15em;
+				background: #14a651;
+				-webkit-transform: rotate(30deg);				
+			}
+			.pencil_icon:before {
+				content: '';
+				position: absolute;
+				top: -5.7em;
+				width: 5em;
+				height: 5em;
+				background: rgb(20, 166, 81);
+				-webkit-transform: rotate(0deg);
+				border-top-right-radius: 1em;
+				border-top-left-radius: 1em;	
+			}
+			.pencil_icon:after {
+				content: '';
+				position: absolute;
+				bottom: -2.5em;
+				width: 5em;
+				height: 5em;
+				background: rgb(20, 166, 81);
+				-webkit-transform: rotate(0deg) skewX(-26.5deg) skewY(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pencil_icon"></div>
+	</body>
+</html>
