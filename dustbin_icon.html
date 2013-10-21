@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+	<head>
+		<title>
+			CSS - Shapes Diamond
+		</title>
+		<style type="text/css">
+			.dustbin_icon {
+				position: relative;
+				top: 12em;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				width: 12em;
+				height: 14em;
+				background: linear-gradient(90deg, rgb(20, 166, 81) 40%, transparent 40%);
+				background-size: 2.8em;
+				border-bottom: 1.6em solid rgb(20, 166, 81);
+				border-bottom-right-radius: 1em;
+				border-bottom-left-radius: 1em;
+			}
+			.dustbin_icon:before {
+				content: '';
+				position: absolute;
+				top: -3em;
+				left: -1.5em;
+				width: 14em;
+				height: 2.2em;
+				border-width: 0.6em;
+				border-style: solid;
+				border-color: rgb(20, 166, 81);
+				-webkit-transform: rotate(0deg);
+				border-top-right-radius: 1em;
+				border-top-left-radius: 1em;	
+			}
+			.dustbin_icon:after {
+				content: '';
+				position: absolute;
+				top: -5.1em;
+				left: 3em;
+				width: 5em;
+				height: 1.5em;
+				border-top-right-radius: 1em;
+				border-top-left-radius: 1em;
+				border-width: 0.6em;
+				border-color: rgb(20, 166, 81);
+				border-style: solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dustbin_icon"></div>
+	</body>
+</html>
