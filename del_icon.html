@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<head>
+		<title>
+			CSS - Shapes Diamond
+		</title>
+		<style type="text/css">
+			.del_icon {
+				position: relative;
+				top: 12em;
+				left: 20em;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			.del_icon:before {
+				content: '';
+				position: absolute;
+				width: 3em;
+				height: 15em;
+				background: rgb(20, 166, 81);
+				-webkit-transform: rotate(45deg);
+			}
+			.del_icon:after {
+				content: '';
+				position: absolute;
+				width: 3em;
+				height: 15em;
+				background: rgb(20, 166, 81);
+				-webkit-transform: rotate(-45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="del_icon"></div>
+	</body>
+</html>
